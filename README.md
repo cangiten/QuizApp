@@ -5,9 +5,9 @@
 - QuizApp
 ​
 # フォルダ構成  ​
-- Angular  ​
-│  ​
-└ WebAPI  ​
+.
+├── Angular
+├── WebAPI​
 ​
 # 開発環境​
 - OS:Windows10​
