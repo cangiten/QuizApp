@@ -1,0 +1,16 @@
+<nav class="blue-grey">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center"><img src="/assets/img/angular_solidBlack.svg" width="80" height="80"></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li *ngIf="!quizService.isLoggedIn()">
+        <a [routerLink]="['/login']" class="btn-small btn-submit"><i class="material-icons prefix">input</i>ログイン</a>
+      </li>
+      <li *ngIf="!quizService.isLoggedIn()">
+          <a [routerLink]="['/register']" class="btn-small btn-submit"><i class="material-icons prefix">how_to_reg</i>新規登録</a>
+        </li>
+      <li *ngIf="quizService.isLoggedIn()">
+        <a (click)="SignOut()" class="btn-small btn-submit"><i class="material-icons prefix">power_settings_new</i>ログアウト</a>
+      </li>
+    </ul>
+  </div>
+</nav>

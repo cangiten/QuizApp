@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="row">
+    <div class="col s6 offset-s3">
+        <h4>受験履歴</h4>
+        <table class="table table-striped centered">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>点数</th>
+                    <th>実施時間</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngIf="results">
+                    <tr *ngFor="let info of results;let idx = index">
+                        <td>{{idx + 1}}</td>
+                        <td>{{info.score}}/10</td>
+                        <td>{{info.timeSpent | minuteSeconds}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col s2 offset-s5">
+            <button class="btn-large btn-submit" (click)="startQuiz()">受験開始</button>
+        </div>
+    </div>
+</div>
