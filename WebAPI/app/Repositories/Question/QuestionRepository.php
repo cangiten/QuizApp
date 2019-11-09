@@ -61,12 +61,12 @@ class QuestionRepository implements QuestionRepositoryInterface
                                  
          　 [0]:3 ---> 3目質問      [0]:4 ---> 1目質問の答え
             [1]:1 ---> 1目質問      [1]:2 ---> 2目質問の答え
-            [2]:2 ---> 3目質問      [2]:3 ---> 3目質問の答え
+            [2]:2 ---> 2目質問      [2]:3 ---> 3目質問の答え
 
             出力結果:
-                [0]:3
-                [1]:4
-                [2]:2
+                [0]:4
+                [1]:2
+                [2]:3
         */
         $results = [];
         foreach ($questionIds as $key => $value) {

@@ -17,7 +17,7 @@ class TestController extends Controller
         $this->repo = $testRepository;
     }
 
-    //ユーザー登録の処理
+    //受験結果登録の処理
     public function create(Request $request)
     {
         if (!$user = JWTAuth::parseToken()->authenticate()) {
@@ -26,6 +26,6 @@ class TestController extends Controller
         
         $response = $this->repo->create($request->all());
 
-        return response()->json('受験結果の登録が成功しました', 201);
+        return response()->json('受験結果の登録に成功しました', 201);
     }
 }

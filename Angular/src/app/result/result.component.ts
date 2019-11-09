@@ -36,6 +36,7 @@ export class ResultComponent implements OnInit {
       this.router.navigate(['/quiz']);
   }
 
+  //ローカルストレージ初期化
   clearLocalStorage(){
     localStorage.setItem('qnProgress', "0");
     localStorage.setItem('qns', "");
