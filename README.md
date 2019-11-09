@@ -4,10 +4,13 @@
 # プロジェクト名​
 - QuizApp
 ​
-# フォルダ構成  ​
-- Angular  ​
-│  ​
-└ WebAPI  ​
+# フォルダ構成
+
+    .
+    ├── Angular                   # フロントシステム
+    ├── WebAPI                    # サーバWebAPI
+    ├── DBScript.sql              # DB生成スクリプト
+    └── README.md
 ​
 # 開発環境​
 - OS:Windows10​
